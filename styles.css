@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  min-width: 400px;
+  width: 400px;
+  margin: 0px;
+  background-color: rgba(139, 173, 212, 0.329);
+}
+
+
+
+.principal{
+    background: rgba(160, 177, 192, 0.082);
+    width: full;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.title{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(69, 80, 80);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.div-input{
+  display: flex;
+  flex-direction: column;
+  width: full;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actions{
+  display: flex;
+  width: full;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #2bbfc4;
+  background-color: rgb(66, 82, 82);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.bd-content{
+  margin-top: 10px;
+  min-height: 240px;
+  max-height: 240px;
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.data{
+  display: flex;
+  width: full;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(66, 82, 82);
+  color: #2bbfc4;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.copy-message{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transform: translateY(-50%);
+  background-color: #2bbfc4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  scale: 0.7;
+  z-index: 100;
+}
+
+.copy-message.show {
+  opacity: 1;
+}
+
+.copy-message.hidden {
+  opacity: 0;
+  cursor: default;
+}
+
+.remove-buttom{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: translateY(-50%);
+  background-color: #c44a2b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  scale: 0.8;
+  z-index: 100;
+}
+
+.remove-buttom.show {
+  opacity: 1;
+}
+
+.remove-buttom.hidden {
+  opacity: 0;
+  cursor: default;
+}
+
+.data:hover {
+  background-color: rgb(66, 82, 82);
+  color: rgb(247, 247, 247);
+}
+
+.key{
+  font-weight: bold;
+
+}
+
+#save:hover{
+  scale: 1.05;
+}
+
+.finput {
+  width: full;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #2bbfc4;
+  background: rgba(20, 20, 20, 0.8);
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px #2bbfc4;
+  font-family: 'Orbitron', sans-serif; /* Fuente opcional para look futurista */
+}
